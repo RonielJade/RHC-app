@@ -1,0 +1,41 @@
+<ion-header>
+      <ion-toolbar>
+
+        <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>Profile</ion-title>
+      </ion-toolbar>
+</ion-header>
+<br>
+
+
+
+    <ion-content class="ion-padding">
+      
+      
+      <div class="samp">
+        <ion-text class="subtitle"> First Name</ion-text><br>
+        <ion-text class="title">{{userData.fName}}</ion-text><br>
+        <ion-text class="subtitle"> Middle Name</ion-text><br>
+        <ion-text class="title">{{userData.mName}}</ion-text><br>
+        <ion-text class="subtitle"> Last Name</ion-text><br>
+        <ion-text class="title">{{userData.lName}}</ion-text><br>
+        <ion-text class="subtitle"> Birthdate</ion-text><br>
+        <ion-text class="title">{{userData.date}}</ion-text><br>
+        <ion-text class="subtitle"> Email</ion-text><br>
+        <ion-text class="title">{{userData.email}}</ion-text><br><br>
+        <ion-text class="text-number"> You are using your mobile number <b>{{userNum.number}}</b></ion-text><br>
+     </div>
+      
+     <br>
+      <p id="pLink" class="pLink" href="">Delete my Account</p>
+      <hr color="grey" expand="full">
+    
+        <ion-alert
+          trigger="pLink"
+          header="Are you sure?"
+          [buttons]="alertButtons"
+        ></ion-alert>
+      
+    </ion-content>

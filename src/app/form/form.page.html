@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+</ion-header>
+<ion-content class="content">
+  <div class="content">
+    <h3>Account Information</h3>
+    <h5>You are logging in with this mobile number</h5>
+    <p class="p1">Please complete the following details to proceed.</p>
+  </div>
+
+  <div class="content1">
+    <form #infoForm="ngForm" (ngSubmit)="SendData(infoForm.value)" action="">
+      <ion-input name="fName" ngModel label="First Name" label-placement="floating" fill="outline" placeholder="Enter Your First Name" required></ion-input><br>
+      <ion-input name="mName" ngModel label="Middle Name" label-placement="floating" fill="outline" placeholder="Enter Your Middle Name" required></ion-input><br>
+      <ion-input name="lName" ngModel label="Last Name" label-placement="floating" fill="outline" placeholder="Enter Your Last Name" required></ion-input><br>
+      <ion-input name="date" ngModel type="date" label="Birthday" label-placement="stacked" fill="outline" placeholder="Enter Your Birthdate" required></ion-input><br>
+      <ion-input name="email" ngModel type="email" label="Email" label-placement="stacked" fill="outline" placeholder="(Optional)" required></ion-input><br>
+
+      <ion-checkbox labelPlacement="end">I have read, understood, and accepted the <br> <span style="color:rgb(0, 140, 255); ">Terms & Conditions</span></ion-checkbox><br><br>
+      <ion-checkbox labelPlacement="end">I have read, understood, and accepted the <br> <span style="color:rgb(0, 140, 255); ">Privacy Policy</span></ion-checkbox><br><br><br>
+
+      <ion-button type="submit" routerLink="/home">Submit</ion-button>
+    </form>
+  </div>
+  <!-- <ion-inputc
+  type="number"
+  fill="solid"
+  label="Mobile Number"
+  labelPlacement="floating"
+  helperText="Enter a Mobile Number"
+  errorText="Invalid Number" #number>
+</ion-input> -->
+</ion-content>

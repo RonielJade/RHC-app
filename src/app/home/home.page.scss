@@ -1,0 +1,56 @@
+ion-header {
+  --border-width: 0;
+  --background: transparent;
+}
+
+ion-toolbar {
+  --border-width: 0;
+  --background: transparent;
+}
+
+.home-banner{
+ 
+ 
+      height: 25%; 
+      overflow: hidden;
+      position: relative; 
+}
+
+.home-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain
+ 
+}
+
+.p1{
+      position: absolute;
+      top: 0;
+      margin-top: 150px;
+      margin-left: 60px;
+      width: 100%;
+      color: black;
+      font-weight: bolder;
+      
+}
+
+ion-searchbar{
+  --border-radius:50px;
+  --clear-button-color:red;
+  --icon-color:rgb(0, 119, 255);
+}
+
+.pSubtitle{
+  margin-top: 40px;
+  margin-left: 15px;
+  width: 100%;
+  color: black;
+  font-weight: bolder;
+  font-size:large;
+}
+
+.textCenter{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}

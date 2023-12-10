@@ -1,0 +1,59 @@
+<ion-header></ion-header>
+<ion-content>
+
+<div style="display: flex; justify-content: center; margin-top: 40px;">
+  <ion-row style="align-items: center; ">
+    <ion-avatar style="margin-right: 10px;" class="logo">
+      <img src=".../../../../assets/logo.png">
+    </ion-avatar>
+    <h4 style="color:grey; font-weight: bold;">Rapid HealthCare</h4>
+  </ion-row>
+</div>
+<!-- Number input -->
+<div class="customNumber">
+<form #numForm="ngForm" (ngSubmit)="SendData(numForm.value)" >
+  <h4 style="font-weight: 600;">Enter your mobile number and  get started</h4>
+  
+<ion-input
+  name="number" 
+  ngModel
+  type="number"
+  fill="solid"
+  label="Mobile Number"
+  labelPlacement="floating"
+  helperText="Enter a Mobile Number"
+  errorText="Invalid Number">
+</ion-input>
+<ion-button type="submit" shape="round" style="margin-top:30px ;" routerLink="/verification">Continue</ion-button>
+<hr style="opacity: .2; margin-top:50px;" color="grey">
+</form>
+</div>
+
+<div style="display: flex; justify-content: center; margin-top: 20px;margin-left: 50px; margin-right: 50px;">
+  <ion-row style="align-items: center; ">
+    <ion-avatar style="margin-right: 10px;" class="logo">
+      <img src=".../../../../assets/book.png">
+    </ion-avatar>
+    <h4 style="color:grey; font-weight: bold;"><span class="span1">Book</span><br><span class="span2">Easily Connect with your doctors</span></h4>
+    
+  </ion-row>
+</div>
+<div style="display: flex; justify-content: center; margin-top: 20px;">
+  <ion-row style="align-items: center; ">
+    <ion-avatar style="margin-right: 10px;" class="logo">
+      <img src=".../../../../assets/consult.png">
+    </ion-avatar>
+    <h4 style="color:grey; font-weight: bold;"><span class="span1">Consult</span><br><span class="span2">Visit your doctor or consult online</span></h4>
+  </ion-row>
+</div>
+<div style="display: flex; justify-content: center; margin-top: 20px;">
+  <ion-row style="align-items: center; ">
+    <ion-avatar style="margin-right: 10px;" class="logo">
+      <img src=".../../../../assets/queue.png">
+    </ion-avatar>
+    <h4 style="color:grey; font-weight: bold;"><span class="span1">Queue</span><br><span class="span2">Efficient and reduce waiting times</span></h4>
+  </ion-row>
+</div>
+
+</ion-content>
+<ion-footer></ion-footer>

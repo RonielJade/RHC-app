@@ -1,0 +1,16 @@
+
+ion-card-title{
+  text-align: center;
+}
+
+.center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 100% of the viewport height */
+  }
+
+  .center-content {
+    text-align: center;
+    max-width: 300px; /* Adjust the maximum width based on your design */
+  }
